@@ -6,15 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://xubing.xin">
-  <title>tags | 小兵X的探索</title>
+  <title>L01-ReactNative开发环境-iOS | 小兵X的探索</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://xubing.xin/tags/index.html">
+  <meta name="description" content="环境需求
+需要一台Mac(OSX),这个是前提。OSX 操作系统这是开发ios应用所必须的
+安装Xcode7.0或者更高版本。当然这可以在AppStore中找到。提醒：千万不要相信分享或者百度空间中的镜像，风险比较大（XcodeGhost）。
+安装Homebrew  可通过Homebrew来安装Watchman和Flow。
+brew install node  安装note.js
+brew ins">
+<meta property="og:type" content="article">
+<meta property="og:title" content="L01-ReactNative开发环境-iOS">
+<meta property="og:url" content="http://xubing.xin/2017/07/06/L01-ReactNative开发环境-iOS/index.html">
 <meta property="og:site_name" content="小兵X的探索">
-<meta property="og:updated_time" content="2017-03-31T08:12:28.853Z">
+<meta property="og:description" content="环境需求
+需要一台Mac(OSX),这个是前提。OSX 操作系统这是开发ios应用所必须的
+安装Xcode7.0或者更高版本。当然这可以在AppStore中找到。提醒：千万不要相信分享或者百度空间中的镜像，风险比较大（XcodeGhost）。
+安装Homebrew  可通过Homebrew来安装Watchman和Flow。
+brew install node  安装note.js
+brew ins">
+<meta property="og:updated_time" content="2017-07-06T11:10:09.897Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="L01-ReactNative开发环境-iOS">
+<meta name="twitter:description" content="环境需求
+需要一台Mac(OSX),这个是前提。OSX 操作系统这是开发ios应用所必须的
+安装Xcode7.0或者更高版本。当然这可以在AppStore中找到。提醒：千万不要相信分享或者百度空间中的镜像，风险比较大（XcodeGhost）。
+安装Homebrew  可通过Homebrew来安装Watchman和Flow。
+brew install node  安装note.js
+brew ins">
   
     <link rel="alternative" href="/atom.xml" title="小兵X的探索" type="application/atom+xml">
   
@@ -138,27 +156,45 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-L01-ReactNative开发环境-iOS" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      tags
+      L01-ReactNative开发环境-iOS
     </h1>
   
 
         
-        <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2017-03-31T08:12:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-31</time>
+        <a href="/2017/07/06/L01-ReactNative开发环境-iOS/" class="archive-article-date">
+  	<time datetime="2017-07-06T11:06:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="环境需求"><a href="#环境需求" class="headerlink" title="环境需求"></a>环境需求</h1><ol>
+<li>需要一台Mac(OSX),这个是前提。OSX 操作系统这是开发ios应用所必须的</li>
+<li>安装Xcode7.0或者更高版本。当然这可以在AppStore中找到。<br><strong>提醒：千万不要相信分享或者百度空间中的镜像，风险比较大（<em>XcodeGhost</em>）。</strong></li>
+<li>安装<a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a>  可通过Homebrew来安装Watchman和Flow。</li>
+<li>brew install node  安装note.js</li>
+<li>brew install watchman 安装watchaman解决你可能会遇到一个Node.js监视文件系统的BUG。</li>
+<li>brew install flow 用来为js代码加上类型检查,不装也可以。<br><strong>ok，环境配置好了。当然提醒下记得常更新下这个几个程序最新版本，毕竟ReactNative迭代很快的。</strong></li>
+</ol>
+<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><ol>
+<li>将npm仓库源替换为国内镜像，这个大家都知道的国内网络问题。<br>npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a> –global<br>npm config set disturl <a href="https://npm.taobao.org/dist" target="_blank" rel="external">https://npm.taobao.org/dist</a> –global</li>
+<li>npm install -g react-native-cli</li>
+<li>react-native init HelloWorld   init工程的比较慢耐心等待</li>
+</ol>
+<h1 id="运行iOS应用"><a href="#运行iOS应用" class="headerlink" title="运行iOS应用"></a>运行iOS应用</h1><ul>
+<li>用XCode打开ios/HelloWorld.xcodeproj 选择你要的模拟器并点击Run按钮。<br>ok！你可以开发了！<br><strong>当然如果你想体验下那就用你喜欢的编辑器打开 index.ios.js随便修改几行看看效果吧。</strong></li>
+<li>如果你用的模拟器按下 ⌘-R 就可以刷新APP，修改的结果立马可见。</li>
+</ul>
+<p><strong>享受 吧！Learn once, write anywhere ！</strong></p>
+
       
 
       
@@ -216,7 +252,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://xubing.xin/tags/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://xubing.xin/2017/07/06/L01-ReactNative开发环境-iOS/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -228,6 +264,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/31/FirstBlog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">FirstBlog</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -260,7 +306,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
