@@ -1,57 +1,57 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="简单的生活，走自己的路"><title>【转】Vue学习路线图 | 小兵X的探索</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">【转】Vue学习路线图</h1><a id="logo" href="/.">小兵X的探索</a><p class="description">简单的生活，平凡的世界</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">【转】Vue学习路线图</h1><div class="post-meta">Dec 29, 2018</div><div class="post-content"><p><img src="https://i.imgur.com/LcRy56y.png" alt=""><br>如果你是 Vue 开发新手，可能已经听过很多行话术语，比如单页面应用程序、异步组件、服务器端渲染，等等。你可能还听说过与 Vue 有关的一些工具和库，比如 Vuex、Webpack、Vue CLI 和 Nuxt。</p>
 <p>浸没在术语和工具的浩瀚海洋中难免会令人感到沮丧，但其实并不是只有你一个人有这种感受，所有经验水平的开发人员都会持续感觉到这种莫名的压力。</p>
 <p>一口气吃不成胖子，试图一下子学习所有东西可能是徒劳的，所以我将在这篇文章中展示一个高级“知识地图”，它包含了与 Vue 开发相关的关键领域，你可以使用这张地图作为 2019 年学习 Vue 的图鉴。<br><img src="https://i.imgur.com/Cfy9DuM.png" alt=""></p>
-<p>##0. JavaScript 和基本的 Web 开发<br>如果我要你学习中文书籍中所写的内容，你首先要学会中文，对吧？</p>
+<h2 id="0-JavaScript-和基本的-Web-开发"><a href="#0-JavaScript-和基本的-Web-开发" class="headerlink" title="0. JavaScript 和基本的 Web 开发"></a>0. JavaScript 和基本的 Web 开发</h2><p>如果我要你学习中文书籍中所写的内容，你首先要学会中文，对吧？</p>
 <p>同样，Vue 是一个用于构建 Web 用户界面的 JavaScript 框架。在开始使用 Vue 之前，你必须了解 JavaScript 和 Web 开发的基础知识。</p>
-<p>##1. Vue 基本概念<br>如果你是 Vue 开发新手，应该专注于 Vue.js 生态系统的核心，包括 Vue 核心库、Vue Router 和 Vuex。</p>
+<h2 id="1-Vue-基本概念"><a href="#1-Vue-基本概念" class="headerlink" title="1. Vue 基本概念"></a>1. Vue 基本概念</h2><p>如果你是 Vue 开发新手，应该专注于 Vue.js 生态系统的核心，包括 Vue 核心库、Vue Router 和 Vuex。</p>
 <p>这些工具将被用在大多数 Vue 应用程序中，并为本文中提到的其他领域提供了一个构建框架。</p>
 <h4 id="Vue-核心功能"><a href="#Vue-核心功能" class="headerlink" title="Vue 核心功能"></a>Vue 核心功能</h4><p>从根本上说，Vue 用于同步网页和 JavaScript。实现这一目标的关键特性是反应式（reactive）数据，以及指令和插值等模板功能。这些东西在一开始就要学习。</p>
 <p>要构建你的第一个 Vue 应用程序，你还需要知道如何在网页中安装 Vue，并了解 Vue 实例的生命周期。</p>
-<p>####组件<br>Vue 组件是独立的可重用 UI 元素。你需要了解如何声明组件，以及如何通过 prop 和 event 在它们之间发生交互。</p>
+<h4 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h4><p>Vue 组件是独立的可重用 UI 元素。你需要了解如何声明组件，以及如何通过 prop 和 event 在它们之间发生交互。</p>
 <p>了解如何组合组件也很重要，因为这对使用 Vue 构建健壮、可伸缩的应用程序来说至关重要。</p>
-<p>####单页面应用程序<br>单页面应用程序（SPA）架构通过单个网页实现传统多页面网站一样的功能，而且不会在每次用户触发导航时重新加载和重建页面。</p>
+<h4 id="单页面应用程序"><a href="#单页面应用程序" class="headerlink" title="单页面应用程序"></a>单页面应用程序</h4><p>单页面应用程序（SPA）架构通过单个网页实现传统多页面网站一样的功能，而且不会在每次用户触发导航时重新加载和重建页面。</p>
 <p>在将“页面”构建为 Vue 组件之后，就可以使用 Vue Router 将每个“页面”映射到一个唯一的路径，Vue Router 是一个用于构建 SPA 的工具，由 Vue 团队维护。</p>
-<p>####状态管理<br>随着应用程序变得越来越大，SPA 页面中会有很多组件，管理全局状态变得很困难，而且随着 prop 和 event 监听器的增加，组件变得越来越臃肿。</p>
+<h4 id="状态管理"><a href="#状态管理" class="headerlink" title="状态管理"></a>状态管理</h4><p>随着应用程序变得越来越大，SPA 页面中会有很多组件，管理全局状态变得很困难，而且随着 prop 和 event 监听器的增加，组件变得越来越臃肿。</p>
 <p>一种称为“Flux”的特殊模式可以将数据保存在可预测且稳定的中央存储中。由 Vue 团队维护的 Vuex 库可以帮助你在 Vue.js 应用程序中实现 Flux。</p>
-<p>##2. 现实世界中的 Vue<br>以上的知识可用于构建高性能的 Vue 应用程序，但如何将它们部署到生产环境中？</p>
+<h2 id="2-现实世界中的-Vue"><a href="#2-现实世界中的-Vue" class="headerlink" title="2. 现实世界中的 Vue"></a>2. 现实世界中的 Vue</h2><p>以上的知识可用于构建高性能的 Vue 应用程序，但如何将它们部署到生产环境中？</p>
 <p>如果你想将基于 Vue.js 的产品发送给真实用户，你还需要了解更多东西！</p>
-<p>####项目脚手架<br>如果你经常构建 Vue 应用程序，你会发现几乎每个项目都需要提供配置、设置和开发者工具。</p>
+<h4 id="项目脚手架"><a href="#项目脚手架" class="headerlink" title="项目脚手架"></a>项目脚手架</h4><p>如果你经常构建 Vue 应用程序，你会发现几乎每个项目都需要提供配置、设置和开发者工具。</p>
 <p>Vue 团队维护了一个叫作 Vue CLI 的工具，让你可以在几分钟内启动一个强大的 Vue 开发环境。</p>
-<p>####全栈或认证的应用程序<br>真实的 Vue 应用程序通常是由数据驱动的用户界面。数据通常来自使用 Node、Laravel、Rails、Django 或其他服务器框架开发的 API。</p>
+<h4 id="全栈或认证的应用程序"><a href="#全栈或认证的应用程序" class="headerlink" title="全栈或认证的应用程序"></a>全栈或认证的应用程序</h4><p>真实的 Vue 应用程序通常是由数据驱动的用户界面。数据通常来自使用 Node、Laravel、Rails、Django 或其他服务器框架开发的 API。</p>
 <p>这些数据可能是由传统的 REST API 或 GraphQL 提供的数据，也可能是通过 Web 套接字提供的实时数据。</p>
 <p>你还需要了解将 Vue 集成到完整技术栈中常用设计模式，以及确保 Vue 应用程序用户数据的安全性。</p>
-<p>####测试<br>如果你想开发出可维护且稳定的 Vue 应用程序，需要对它们进行测试。</p>
+<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>如果你想开发出可维护且稳定的 Vue 应用程序，需要对它们进行测试。</p>
 <p>在 Vue 应用程序中，可以通过单元测试来确保你的组件能够为给定输入（即 prop 或用户输入）提供相同的输出（即重新渲染的 HTML 或发出的事件）。</p>
 <p>Vue 团队维护了一个叫作 Vue Test Utils 的工具，用于测试单独的 Vue 组件。</p>
-<p>####优化<br>当你将应用程序部署到远程服务器并且用户通过慢连接访问它时，它与你在开发环境中测试的速度和效率是不一样的。</p>
+<h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><p>当你将应用程序部署到远程服务器并且用户通过慢连接访问它时，它与你在开发环境中测试的速度和效率是不一样的。</p>
 <p>为了优化 Vue 应用程序，我们可以采用各种技术，包括服务器端渲染，也就是在服务器端执行 Vue 应用程序，然后输出 HTML 页面并传给用户。</p>
 <p>其他优化手段还包括使用异步组件和渲染函数。</p>
-<p>##3. 关键的相关工具<br>到目前为止，我们所看到的一切都来自 Vue.js 核心，或来自生态系统中的工具。但 Vue 不是孤立存在的，它只是前端技术栈中的一层。</p>
+<h2 id="3-关键的相关工具"><a href="#3-关键的相关工具" class="headerlink" title="3. 关键的相关工具"></a>3. 关键的相关工具</h2><p>到目前为止，我们所看到的一切都来自 Vue.js 核心，或来自生态系统中的工具。但 Vue 不是孤立存在的，它只是前端技术栈中的一层。</p>
 <p>高级 Vue 开发人员不仅需要熟悉 Vue，还需要熟悉每个 Vue 项目的关键工具。</p>
-<p>####现代 JavaScript 和 Babel<br>Vue 应用程序可以使用 ES5 开发，ES5 是几乎所有浏览器都支持的 JavaScript 标准。</p>
+<h4 id="现代-JavaScript-和-Babel"><a href="#现代-JavaScript-和-Babel" class="headerlink" title="现代 JavaScript 和 Babel"></a>现代 JavaScript 和 Babel</h4><p>Vue 应用程序可以使用 ES5 开发，ES5 是几乎所有浏览器都支持的 JavaScript 标准。</p>
 <p>要获得增强的 Vue 开发体验，并利用新的浏览器功能，你可以使用最新的 JavaScript 标准 ES2015 和 ES2016 或更高版本提供的功能来构建 Vue 应用程序。</p>
 <p>不过，如果你选择使用现代 JavaScript，就需要提供一种支持旧版浏览器的方法，否则你的产品可能无法为大多数用户提供服务。</p>
 <p>要实现这一目的，需要使用 Babel。它的作用是在应用程序发布之前将你的现代功能“转换”（翻译和编译）为标准功能。</p>
-<p>####WebPack<br>Webpack 是模块捆绑器，如果你的代码跨越了不同模块（例如不同的 JavaScript 文件），Webpack 可以将这些零散的代码“构建”到浏览器可读的单个文件中。</p>
+<h4 id="WebPack"><a href="#WebPack" class="headerlink" title="WebPack"></a>WebPack</h4><p>Webpack 是模块捆绑器，如果你的代码跨越了不同模块（例如不同的 JavaScript 文件），Webpack 可以将这些零散的代码“构建”到浏览器可读的单个文件中。</p>
 <p>Webpack 还可以作为构建管道，你可以在构建代码之前对代码进行转换，例如使用 Babel、Sass 或 TypeScript，还可以使用一系列插件来优化你的应用程序。</p>
 <p>很多开发人员觉得 Webpack 难以掌握，配置起来也很麻烦，但如果没有它，将无法使用 Vue 的一些有用的功能（如单文件组件）。</p>
 <p>最近发布的 Vue CLI 3 提供了一种用于在 Vue 项目中抽象和自动配置 Webpack 的解决方案。</p>
 <p>这是否意味着你不需要学习 Webpack 了？当然不是，因为你仍然不可避免地需要进行定制或调试 Webpack 配置。</p>
-<p>####TypeScript<br>TypeScript 是 JavaScript 语言的超集，为我们提供了类型（String、Boolean、Number 等），这样我们就可以编写健壮的代码，并尽早发现错误。</p>
+<h4 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h4><p>TypeScript 是 JavaScript 语言的超集，为我们提供了类型（String、Boolean、Number 等），这样我们就可以编写健壮的代码，并尽早发现错误。</p>
 <p>Vue.js 3 将于 2019 年推出，将完全使用 TypeScript 编写。但这并不意味着你一定要在你的 Vue 项目中使用它，但如果你想要为 Vue 贡献代码，或者想要理解它的内部工作原理，就需要了解 TypeScript。</p>
-<p>##4. Vue 的框架<br>构建在 Vue 之上的框架让你无需从头开始实现服务器端渲染，还可以创建自己的组件库以及完成很多其他常见任务。</p>
+<h2 id="4-Vue-的框架"><a href="#4-Vue-的框架" class="headerlink" title="4. Vue 的框架"></a>4. Vue 的框架</h2><p>构建在 Vue 之上的框架让你无需从头开始实现服务器端渲染，还可以创建自己的组件库以及完成很多其他常见任务。</p>
 <p>有很多很好的 Vue 框架，在这里我们只列出使用最为广泛和最重要的三个框架。</p>
-<p>####Nuxt.js<br>如果你想要构建一个高性能的 Vue 应用程序，就需要基于组件的路由、服务器端渲染、代码拆分和其他尖端的功能。你还需要像 SEO 标签这样的功能。</p>
+<h4 id="Nuxt-js"><a href="#Nuxt-js" class="headerlink" title="Nuxt.js"></a>Nuxt.js</h4><p>如果你想要构建一个高性能的 Vue 应用程序，就需要基于组件的路由、服务器端渲染、代码拆分和其他尖端的功能。你还需要像 SEO 标签这样的功能。</p>
 <p>Nuxt.js 通过各种社区插件提供了这些开箱即用的功能，以及更多的功能选项，如 PWA。</p>
-<p>####Vuetify<br>谷歌的 Material Design 是一个使用十分广泛的指南，用于构建漂亮的逻辑用户界面，并被用在谷歌的产品（如 Android 和 Web）当中。</p>
+<h4 id="Vuetify"><a href="#Vuetify" class="headerlink" title="Vuetify"></a>Vuetify</h4><p>谷歌的 Material Design 是一个使用十分广泛的指南，用于构建漂亮的逻辑用户界面，并被用在谷歌的产品（如 Android 和 Web）当中。</p>
 <p>Vuetify 在一系列 Vue 组件中实现了 Material Design。因此，你可以使用 Material Design 布局和样式快速构建 Vue 应用程序，以及模态、警报、导航栏、分页等小部件。</p>
-<p>####NativeScript-Vue<br>Vue.js 是一个用于构建 Web 用户界面的库。如果你想将它用于原生移动界面，可以使用 NativeScript-Vue 框架。</p>
+<h4 id="NativeScript-Vue"><a href="#NativeScript-Vue" class="headerlink" title="NativeScript-Vue"></a>NativeScript-Vue</h4><p>Vue.js 是一个用于构建 Web 用户界面的库。如果你想将它用于原生移动界面，可以使用 NativeScript-Vue 框架。</p>
 <p>NativeScript 是一个用于在 iOS 和 Android 上使用原生用户界面组件构建应用程序的系统，而 NativeScript-Vue 是一个基于 NativeScript 的框架，提供了 Vue 的语法和组件的使用方式。</p>
-<p>##5. 杂项<br>在最后一部分，我们将介绍其他一些内容。</p>
-<p>####插件开发<br>如果要在项目中重用 Vue 功能或为 Vue 生态系统做贡献，可以将功能作为 Vue 插件来开发。</p>
-<p>####动画<br>如果你需要使用动画，请了解一下 Vue 的过渡系统，它也是 Vue 核心的一部分。你可以在向 DOM 添加元素或从 DOM 中删除元素时应用动画。</p>
+<h2 id="5-杂项"><a href="#5-杂项" class="headerlink" title="5. 杂项"></a>5. 杂项</h2><p>在最后一部分，我们将介绍其他一些内容。</p>
+<h4 id="插件开发"><a href="#插件开发" class="headerlink" title="插件开发"></a>插件开发</h4><p>如果要在项目中重用 Vue 功能或为 Vue 生态系统做贡献，可以将功能作为 Vue 插件来开发。</p>
+<h4 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h4><p>如果你需要使用动画，请了解一下 Vue 的过渡系统，它也是 Vue 核心的一部分。你可以在向 DOM 添加元素或从 DOM 中删除元素时应用动画。</p>
 <p>你需要创建 CSS 类来定义所需的动画效果，无论是淡入淡出、更改颜色还是你喜欢的其他方式。当向 DOM 中添加元素或从 DOM 中删除元素时，Vue 会检测到这些变更，并在过渡期间添加或删除相应的 CSS 类。</p>
-<p>####渐进式 Web 应用程序<br>渐进式 Web 应用程序（PWA）就像普通的 Web 应用程序一样，只是加入了改进的用户体验。例如，PWA 可能包括脱机缓存、服务器端渲染、推送通知等。</p>
+<h4 id="渐进式-Web-应用程序"><a href="#渐进式-Web-应用程序" class="headerlink" title="渐进式 Web 应用程序"></a>渐进式 Web 应用程序</h4><p>渐进式 Web 应用程序（PWA）就像普通的 Web 应用程序一样，只是加入了改进的用户体验。例如，PWA 可能包括脱机缓存、服务器端渲染、推送通知等。</p>
 <p>大多数 PWA 功能可以通过 Vue CLI 3 插件或使用 Nuxt.js 等框架添加到 Vue 应用程序中，但你仍然需要了解一些关键技术，包括 Web App Manifest 和 ServiceWorker。</p>
 <p>英文原文：</p>
 <p><a href="https://vuejsdevelopers.com/2018/12/04/vue-js-2019-knowledge-map/" target="_blank" rel="external">https://vuejsdevelopers.com/2018/12/04/vue-js-2019-knowledge-map/</a></p>
