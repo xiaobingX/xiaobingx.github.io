@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="简单的生活，走自己的路"><title>Git学习 | 小兵X的探索</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Git学习</h1><a id="logo" href="/.">小兵X的探索</a><p class="description">简单的生活，平凡的世界</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Git学习</h1><div class="post-meta">Dec 29, 2018</div><div class="post-content"><p>Git 是最流行的版本管理工具，也是程序员必备的技能之一。整理下学习的基本Git内容！<br><img src="https://i.imgur.com/fS70yIN.jpg" alt=""><br>每天你都会用到Git，但也有可能搞不懂它的工作原理。为什么Git可以管理版本？基本命令git add和git commit到底在干什么？</p>
+<p><img src="https://i.imgur.com/c8NQRQW.png" alt=""></p>
+<h1 id="1-初始化命令"><a href="#1-初始化命令" class="headerlink" title="1 初始化命令"></a>1 初始化命令</h1><h3 id="git-init命令"><a href="#git-init命令" class="headerlink" title="git init命令"></a>git init命令</h3><p>在当前目录新建一个Git代码库<br>$ git init</p>
+<p>新建一个目录，将其初始化为Git代码库</p>
+<p>$ git init [project-name]</p>
+<p>git init只做了一件事情，那就是在项目的根目录下创建.git子目录来保存版本信息。</p>
+<p>$ ls .git</p>
+<p>branches/</p>
+<p>config</p>
+<p>description</p>
+<p>HEAD</p>
+<p>hooks/</p>
+<p>info/</p>
+<p>objects/</p>
+<p>refs/</p>
+<p>上述命令显示了.git子目录中的内容。</p>
+<h3 id="git-clone-命令"><a href="#git-clone-命令" class="headerlink" title="git clone 命令"></a>git clone 命令</h3><p>下载一个项目和它的整个代码历史</p>
+<p>$ git clone [url]</p>
+<h1 id="2-新增-删除命令"><a href="#2-新增-删除命令" class="headerlink" title="2 新增/删除命令"></a>2 新增/删除命令</h1><h3 id="git-add命令"><a href="#git-add命令" class="headerlink" title="git add命令"></a>git add命令</h3><p>添加指定文件到暂存区</p>
+<p>$ git add [file1] [file2] …</p>
+<p>添加指定目录到暂存区，包括子目录</p>
+<p>$ git add [dir]</p>
+<p>添加当前目录的所有文件到暂存区</p>
+<p>$ git add .</p>
+<p>添加每个变化前，都会要求确认<br>对于同一个文件的多处变化，可以实现分次提交</p>
+<p>$ git add -p</p>
+<h3 id="git-rm命令"><a href="#git-rm命令" class="headerlink" title="git rm命令"></a>git rm命令</h3><p>删除工作区文件，并且将这次删除放入暂存区</p>
+<p>$ git rm [file1] [file2] …</p>
+<p>停止追踪指定文件，但该文件会保留在工作区</p>
+<p>$ git rm –cached [file]</p>
+<p>改名文件，并且将这个改名放入暂存区</p>
+<p>$ git mv [file-original] [file-renamed]</p>
+<h1 id="3-代码提交"><a href="#3-代码提交" class="headerlink" title="3 代码提交"></a>3 代码提交</h1><h3 id="git-commit命令"><a href="#git-commit命令" class="headerlink" title="git commit命令"></a>git commit命令</h3><p>提交暂存区到仓库区<br>$ git commit -m [message]</p>
+<p>提交暂存区的指定文件到仓库区<br>$ git commit [file1] [file2] … -m [message]</p>
+<p>提交工作区自上次commit之后的变化，直接到仓库区<br>$ git commit -a</p>
+<p>提交时显示所有diff信息<br>$ git commit -v</p>
+<p>使用一次新的commit，替代上一次提交<br>如果代码没有任何新变化，则用来改写上一次commit的提交信息<br>$ git commit –amend -m [message]</p>
+<p>重做上一次commit，并包括指定文件的新变化<br>$ git commit –amend [file1] [file2] …</p>
+<h2 id="git-checkout命令"><a href="#git-checkout命令" class="headerlink" title="git checkout命令"></a>git checkout命令</h2><p>通过git checkout命令，我们可以切换到某个快照。</p>
+<p>$ git checkout c9053865e9dff393fd2f7a92a18f9bd7f2caa7fa</p>
+<h2 id="git-show命令"><a href="#git-show命令" class="headerlink" title="git show命令"></a>git show命令</h2><p>通过git show命令，我们可以显示某个快照的所有代码变更。</p>
+<p>$ git show c9053865e9dff393fd2f7a92a18f9bd7f2caa7fa</p>
+<h2 id="git-log命令"><a href="#git-log命令" class="headerlink" title="git log命令"></a>git log命令</h2><p>git log命令来查看整个版本的历史记录时，无法看到刚刚生成的快照。</p>
+<p>$ git log</p>
+<p>git log命令只可以显示当前分支上的变化。已经提交了这个快照，但是还没有记录这个快照属于哪个分支。</p>
+<h2 id="git-pull-命令"><a href="#git-pull-命令" class="headerlink" title="git pull 命令"></a>git pull 命令</h2></div><div class="tags"></div><div class="post-nav"><a href="/2018/12/29/react学习路线图/" class="next">React学习路线图</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://xubing.vip"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AppH5/">AppH5</a><span class="category-list-count">2</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/react-native/" style="font-size: 15px;">react-native</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/12/29/git学习记录/">Git学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/29/react学习路线图/">React学习路线图</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/29/【转】Vue学习路线图/">【转】Vue学习路线图</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/06/L02-React-Native-获取屏幕分辨率/">L02-React-Native 获取屏幕分辨率</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/06/L01-ReactNative开发环境-iOS/">L01-ReactNative开发环境-iOS</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/31/FirstBlog/">FirstBlog</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.jianshu.com/u/2a63870ec47a" title="简书" target="_blank">简书</a><ul></ul><a href="http://www.yujiusheng.com" title="Jason" target="_blank">Jason</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">小兵X的探索.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
